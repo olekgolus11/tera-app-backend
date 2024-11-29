@@ -21,8 +21,8 @@ Deno.serve(async (req) => {
 
   const { error: favouriteError } = await supabase
     .from("favourites")
-    .update({ product_id: newVariantId })
-    .eq("product_id", oldVariantId)
+    .update({ variant_id: newVariantId })
+    .eq("variant_id", oldVariantId)
     .eq("user_id", userId);
 
   if (favouriteError) {

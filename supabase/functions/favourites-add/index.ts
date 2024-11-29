@@ -22,7 +22,7 @@ Deno.serve(async (req) => {
     const { error: favouriteError } = await supabase
         .from("favourites")
         .insert({
-            product_id: variantId,
+            variant_id: variantId,
             user_id: userId,
         });
 
