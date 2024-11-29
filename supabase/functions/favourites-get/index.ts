@@ -16,6 +16,7 @@ interface ProductFavourite {
         color: string;
         size: string;
         image_url: string;
+        sex: string;
     };
 }
 
@@ -63,6 +64,7 @@ Deno.serve(async (req) => {
             color: (favourite.products_variants as any).color,
             size: (favourite.products_variants as any).size,
             image_url: (favourite.products_variants as any).image,
+            sex: (favourite.products_variants as any).sex,
         },
     }));
 
