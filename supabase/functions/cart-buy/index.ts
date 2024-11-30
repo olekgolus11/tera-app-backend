@@ -2,25 +2,6 @@ import "jsr:@supabase/functions-js/edge-runtime.d.ts";
 import { SupabaseService } from "../_shared/SupabaseService.ts";
 import { getBearerToken } from "../_shared/functions.ts";
 
-interface ProductCart {
-    product: {
-        id: string;
-        name: string;
-        brand: string;
-        price: number;
-        discount: number;
-        category: string;
-    };
-    variant: {
-        id: string;
-        color: string;
-        size: string;
-        image_url: string;
-        sex: string;
-    };
-    quantity: number;
-}
-
 Deno.serve(async (req) => {
     let supabaseService;
     let userId;
@@ -51,7 +32,7 @@ Deno.serve(async (req) => {
         );
     }
 
-    const { data: transactionData, error: transactionError } = await supabase
+    const { error: transactionError } = await supabase
         .from("transactions")
         .insert({
             user_id: userId,
