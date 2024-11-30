@@ -3,6 +3,7 @@
     "deno.lint": true,
     "deno.enable": true,
     "editor.formatOnSave": true,
+    "editor.tabSize": 4,
     "deno.unstable": [
         "bare-node-builtins",
         "byonm",
