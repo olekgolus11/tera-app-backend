@@ -1,32 +1,61 @@
-// Follow this setup guide to integrate the Deno language server with your editor:
-// https://deno.land/manual/getting_started/setup_your_environment
-// This enables autocomplete, go to definition, etc.
-
-// Setup type definitions for built-in Supabase Runtime APIs
-import "jsr:@supabase/functions-js/edge-runtime.d.ts"
-
-console.log("Hello from Functions!")
+import "jsr:@supabase/functions-js/edge-runtime.d.ts";
+import { SupabaseService } from "../_shared/SupabaseService.ts";
+import { getBearerToken } from "../_shared/functions.ts";
 
 Deno.serve(async (req) => {
-  const { name } = await req.json()
-  const data = {
-    message: `Hello ${name}!`,
-  }
+    const { variantId } = await req.json();
 
-  return new Response(
-    JSON.stringify(data),
-    { headers: { "Content-Type": "application/json" } },
-  )
-})
+    let supabaseService;
+    let userId;
 
-/* To invoke locally:
+    if (Deno.env.get("IS_DEV")) {
+        supabaseService = new SupabaseService();
+        userId = "e252c237-5d01-4b50-b7df-c1b8d5c7586b";
+    } else {
+        const token = getBearerToken(req);
+        supabaseService = new SupabaseService(token);
+        userId = (await supabaseService.getUser(token)).data.user?.id;
+    }
 
-  1. Run `supabase start` (see: https://supabase.com/docs/reference/cli/supabase-start)
-  2. Make an HTTP request:
+    const supabase = supabaseService.supabase;
 
-  curl -i --location --request POST 'http://127.0.0.1:54321/functions/v1/favourites-move' \
-    --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0' \
-    --header 'Content-Type: application/json' \
-    --data '{"name":"Functions"}'
+    const { error: basketError } = await supabase
+        .from("baskets")
+        .insert({
+            variant_id: variantId,
+            user_id: userId,
+            quantity: 1,
+        });
 
-*/
+    if (basketError) {
+        return new Response(
+            JSON.stringify(basketError),
+            { status: 403, headers: { "Content-Type": "application/json" } },
+        );
+    }
+
+    const { error: favouriteError } = await supabase
+        .from("favourites")
+        .delete()
+        .eq("variant_id", variantId)
+        .eq("user_id", userId);
+
+    if (favouriteError) {
+        //rollback
+        await supabase
+            .from("baskets")
+            .delete()
+            .eq("variant_id", variantId)
+            .eq("user_id", userId);
+
+        return new Response(
+            JSON.stringify(favouriteError),
+            { status: 403, headers: { "Content-Type": "application/json" } },
+        );
+    }
+
+    return new Response(
+        null,
+        { headers: { "Content-Type": "application/json" }, status: 201 },
+    );
+});
