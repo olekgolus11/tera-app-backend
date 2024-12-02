@@ -17,6 +17,7 @@ interface ProductFavourite {
         size: string;
         image_url: string;
         sex: string;
+        isInCart: boolean;
     };
 }
 
@@ -50,6 +51,20 @@ Deno.serve(async (req) => {
         );
     }
 
+    const { data: cartData, error: cartError } = await supabase
+        .from("baskets")
+        .select("variant_id")
+        .eq("user_id", userId);
+
+    if (cartError) {
+        return new Response(
+            JSON.stringify(cartError),
+            { status: 403, headers: { "Content-Type": "application/json" } },
+        );
+    }
+
+    console.log(cartData);
+
     const responseBody: ProductFavourite[] = data.map((favourite) => ({
         product: {
             id: (favourite.products_variants as any).products.id,
@@ -65,6 +80,9 @@ Deno.serve(async (req) => {
             size: (favourite.products_variants as any).size,
             image_url: (favourite.products_variants as any).image,
             sex: (favourite.products_variants as any).sex,
+            isInCart: cartData.some((favouriteData) =>
+                favouriteData.variant_id === favourite.variant_id
+            ),
         },
     }));
 
