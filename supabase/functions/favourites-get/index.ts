@@ -63,8 +63,6 @@ Deno.serve(async (req) => {
         );
     }
 
-    console.log(cartData);
-
     const responseBody: ProductFavourite[] = data.map((favourite) => ({
         product: {
             id: (favourite.products_variants as any).products.id,
@@ -78,7 +76,7 @@ Deno.serve(async (req) => {
             id: favourite.variant_id,
             color: (favourite.products_variants as any).color,
             size: (favourite.products_variants as any).size,
-            image_url: (favourite.products_variants as any).image,
+            image_url: (favourite.products_variants as any).image_url,
             sex: (favourite.products_variants as any).sex,
             isInCart: cartData.some((favouriteData) =>
                 favouriteData.variant_id === favourite.variant_id

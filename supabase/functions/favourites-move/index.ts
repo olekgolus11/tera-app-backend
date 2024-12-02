@@ -34,26 +34,6 @@ Deno.serve(async (req) => {
         );
     }
 
-    const { error: favouriteError } = await supabase
-        .from("favourites")
-        .delete()
-        .eq("variant_id", variantId)
-        .eq("user_id", userId);
-
-    if (favouriteError) {
-        //rollback
-        await supabase
-            .from("baskets")
-            .delete()
-            .eq("variant_id", variantId)
-            .eq("user_id", userId);
-
-        return new Response(
-            JSON.stringify(favouriteError),
-            { status: 403, headers: { "Content-Type": "application/json" } },
-        );
-    }
-
     return new Response(
         null,
         { headers: { "Content-Type": "application/json" }, status: 201 },

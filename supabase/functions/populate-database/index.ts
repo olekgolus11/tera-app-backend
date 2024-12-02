@@ -52,7 +52,6 @@ interface Product {
 interface ProductVariant {
     product_id: string;
     size: string;
-    stock: number;
     color: string;
     image_url: string;
     sex: "women" | "men" | "kids";
@@ -73,7 +72,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "1fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black-white",
                     image_url:
                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/skwgyqrbfzhu6uyeh0gg/AIR+MAX+270.png",
@@ -82,7 +80,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "1fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black-white",
                     image_url:
                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/skwgyqrbfzhu6uyeh0gg/AIR+MAX+270.png",
@@ -91,7 +88,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "1fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black-white",
                     image_url:
                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/skwgyqrbfzhu6uyeh0gg/AIR+MAX+270.png",
@@ -100,7 +96,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "1fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "white",
                     image_url:
                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/awjogtdnqxniqqk0wpgf/AIR+MAX+270.png",
@@ -109,7 +104,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "1fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "white",
                     image_url:
                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/awjogtdnqxniqqk0wpgf/AIR+MAX+270.png",
@@ -118,7 +112,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "1fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "white",
                     image_url:
                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/awjogtdnqxniqqk0wpgf/AIR+MAX+270.png",
@@ -127,7 +120,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "1fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black",
                     image_url:
                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/dl2krirthxihbhgtkdv5/AIR+MAX+270.png",
@@ -136,7 +128,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "1fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black",
                     image_url:
                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/dl2krirthxihbhgtkdv5/AIR+MAX+270.png",
@@ -145,7 +136,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "1fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black",
                     image_url:
                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/dl2krirthxihbhgtkdv5/AIR+MAX+270.png",
@@ -165,7 +155,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "2fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black-white",
                     image_url:
                         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bad84b99019d4386a67cd03ecc51c0a4_9366/Ultraboost_1.0_Shoes_Czern_HQ4201_H",
@@ -174,7 +163,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "2fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black-white",
                     image_url:
                         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bad84b99019d4386a67cd03ecc51c0a4_9366/Ultraboost_1.0_Shoes_Czern_HQ4201_H",
@@ -183,7 +171,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "2fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black-white",
                     image_url:
                         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bad84b99019d4386a67cd03ecc51c0a4_9366/Ultraboost_1.0_Shoes_Czern_HQ4201_H",
@@ -192,7 +179,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "2fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "white-green",
                     image_url:
                         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/4dea41850536484faa1a24fd10b30ddc_9366/Ultraboost_1.0_Shoes_Bialy_JH6600_01_standard.jpg",
@@ -201,7 +187,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "2fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "white-green",
                     image_url:
                         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/4dea41850536484faa1a24fd10b30ddc_9366/Ultraboost_1.0_Shoes_Bialy_JH6600_01_standard.jpg",
@@ -210,7 +195,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "2fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "white-green",
                     image_url:
                         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/4dea41850536484faa1a24fd10b30ddc_9366/Ultraboost_1.0_Shoes_Bialy_JH6600_01_standard.jpg",
@@ -230,7 +214,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "3fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "checkerboard",
                     image_url:
                         "https://img.eobuwie.cloud/eob_product_660w_880h(7/4/8/4/748463f40776830b04677081ef5d25977154f872_03_0888654802870_rz.jpg,webp)/tenisowki-vans-uy-classic-slip-on-vn000zbueo01-checkerboard-blk-pewter-000030321716",
@@ -239,7 +222,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "3fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "checkerboard",
                     image_url:
                         "https://img.eobuwie.cloud/eob_product_660w_880h(7/4/8/4/748463f40776830b04677081ef5d25977154f872_03_0888654802870_rz.jpg,webp)/tenisowki-vans-uy-classic-slip-on-vn000zbueo01-checkerboard-blk-pewter-000030321716",
@@ -248,7 +230,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "3fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "checkerboard",
                     image_url:
                         "https://img.eobuwie.cloud/eob_product_660w_880h(7/4/8/4/748463f40776830b04677081ef5d25977154f872_03_0888654802870_rz.jpg,webp)/tenisowki-vans-uy-classic-slip-on-vn000zbueo01-checkerboard-blk-pewter-000030321716",
@@ -257,7 +238,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "3fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "gray",
                     image_url:
                         "https://img.eobuwie.cloud/eob_product_528w_704h(9/8/9/1/98915e04d78c67157f63deb644692ab68fbe3753_03_0196573419926_ki.jpg,webp)/tenisowki-vans-uy-classic-slip-on-vn0005wwsxn1-silver-navy-0000303198329.webp",
@@ -266,7 +246,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "3fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "gray",
                     image_url:
                         "https://img.eobuwie.cloud/eob_product_528w_704h(9/8/9/1/98915e04d78c67157f63deb644692ab68fbe3753_03_0196573419926_ki.jpg,webp)/tenisowki-vans-uy-classic-slip-on-vn0005wwsxn1-silver-navy-0000303198329.webp",
@@ -275,7 +254,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "3fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "gray",
                     image_url:
                         "https://img.eobuwie.cloud/eob_product_528w_704h(9/8/9/1/98915e04d78c67157f63deb644692ab68fbe3753_03_0196573419926_ki.jpg,webp)/tenisowki-vans-uy-classic-slip-on-vn0005wwsxn1-silver-navy-0000303198329.webp",
@@ -295,7 +273,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "4fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black",
                     image_url:
                         "https://images.asics.com/is/image/asics/1201A867_001_SR_RT_GLB?$zoom$",
@@ -315,7 +292,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "5fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black-white",
                     image_url:
                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/80ab9794-f137-4750-9920-1002e26f0f62/NIKE+REACTX+INFINITY+RN+4+GTX.png",
@@ -335,7 +311,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "6fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "white",
                     image_url:
                         "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/69721f2e7c934d909168a80e00818569_9366/Stan_Smith_Shoes_Bialy_M20324_01_standard.jpg",
@@ -355,7 +330,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "7fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "white",
                     image_url:
                         "https://media.converse.pl/catalog/product/m/7/m7650_a_107x1_1.jpg",
@@ -364,7 +338,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "7fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "white",
                     image_url:
                         "https://media.converse.pl/catalog/product/m/7/m7650_a_107x1_1.jpg",
@@ -384,7 +357,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "8fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black",
                     image_url:
                         "https://img.eobuwie.cloud/eob_product_660w_880h(f/e/1/6/fe16cf8900ae7401b03c39465058b2afc9bb8fe0_22_0195719627652_rz.jpg,webp)/buty-hoka-bondi-8-1123202-bblc.webp",
@@ -393,7 +365,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "8fa85f64-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black",
                     image_url:
                         "https://img.eobuwie.cloud/eob_product_660w_880h(f/e/1/6/fe16cf8900ae7401b03c39465058b2afc9bb8fe0_22_0195719627652_rz.jpg,webp)/buty-hoka-bondi-8-1123202-bblc.webp",
@@ -413,7 +384,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "10fa85f6-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black",
                     image_url:
                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7cd0845e-4eba-4ccf-8237-bc47f1e31f3e/AIR+FORCE+1+%2707.png",
@@ -422,7 +392,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "10fa85f6-5717-4562-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black",
                     image_url:
                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7cd0845e-4eba-4ccf-8237-bc47f1e31f3e/AIR+FORCE+1+%2707.png",
@@ -445,7 +414,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "11fa85f6-5717-4562-b3fc-2c963f66afa6",
                     size: "S",
-                    stock: 10,
                     color: "white",
                     image_url:
                         "https://image.hm.com/assets/hm/51/d8/51d81ba13ce44adb43730f956ef5cac31a3d4275.jpg?imwidth=2160",
@@ -454,7 +422,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "11fa85f6-5717-4562-b3fc-2c963f66afa6",
                     size: "S",
-                    stock: 10,
                     color: "white",
                     image_url:
                         "https://image.hm.com/assets/hm/51/d8/51d81ba13ce44adb43730f956ef5cac31a3d4275.jpg?imwidth=2160",
@@ -463,7 +430,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "11fa85f6-5717-4562-b3fc-2c963f66afa6",
                     size: "S",
-                    stock: 10,
                     color: "white",
                     image_url:
                         "https://image.hm.com/assets/hm/51/d8/51d81ba13ce44adb43730f956ef5cac31a3d4275.jpg?imwidth=2160",
@@ -472,7 +438,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "11fa85f6-5717-4562-b3fc-2c963f66afa6",
                     size: "S",
-                    stock: 10,
                     color: "gray",
                     image_url:
                         "https://image.hm.com/assets/hm/4a/50/4a50b46ff8aa60d3332835ab5217df10e7bda29f.jpg?imwidth=2160",
@@ -481,7 +446,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "11fa85f6-5717-4562-b3fc-2c963f66afa6",
                     size: "S",
-                    stock: 10,
                     color: "gray",
                     image_url:
                         "https://image.hm.com/assets/hm/4a/50/4a50b46ff8aa60d3332835ab5217df10e7bda29f.jpg?imwidth=2160",
@@ -490,7 +454,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "11fa85f6-5717-4562-b3fc-2c963f66afa6",
                     size: "S",
-                    stock: 10,
                     color: "gray",
                     image_url:
                         "https://image.hm.com/assets/hm/4a/50/4a50b46ff8aa60d3332835ab5217df10e7bda29f.jpg?imwidth=2160",
@@ -499,7 +462,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "11fa85f6-5717-4562-b3fc-2c963f66afa6",
                     size: "S",
-                    stock: 10,
                     color: "blue",
                     image_url:
                         "https://image.hm.com/assets/hm/c9/b5/c9b53516e6d09fffc2e744a11de8553c933dd150.jpg?imwidth=2160",
@@ -508,7 +470,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "11fa85f6-5717-4562-b3fc-2c963f66afa6",
                     size: "S",
-                    stock: 10,
                     color: "blue",
                     image_url:
                         "https://image.hm.com/assets/hm/c9/b5/c9b53516e6d09fffc2e744a11de8553c933dd150.jpg?imwidth=2160",
@@ -517,7 +478,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "11fa85f6-5717-4562-b3fc-2c963f66afa6",
                     size: "S",
-                    stock: 10,
                     color: "blue",
                     image_url:
                         "https://image.hm.com/assets/hm/c9/b5/c9b53516e6d09fffc2e744a11de8553c933dd150.jpg?imwidth=2160",
@@ -537,7 +497,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "12fa85f6-5717-4562-b3fc-2c963f66afa6",
                     size: "S",
-                    stock: 10,
                     color: "blue",
                     image_url:
                         "https://static.zara.net/assets/public/6cad/afa9/a94c43b3a5fa/161a7a4b4238/06164186427-e1/06164186427-e1.jpg?ts=1726650212052&w=563",
@@ -546,7 +505,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "12fa85f6-5717-4562-b3fc-2c963f66afa6",
                     size: "S",
-                    stock: 10,
                     color: "blue",
                     image_url:
                         "https://static.zara.net/assets/public/6cad/afa9/a94c43b3a5fa/161a7a4b4238/06164186427-e1/06164186427-e1.jpg?ts=1726650212052&w=563",
@@ -566,7 +524,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "13fa85f6-5717-4562-b3fc-2c963f66afa6",
                     size: "S",
-                    stock: 10,
                     color: "black",
                     image_url:
                         "https://image.hm.com/assets/hm/d2/b6/d2b600f3bcfc2f061a1e7ec6353fa0e0bcd2f092.jpg?imwidth=564",
@@ -575,7 +532,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "13fa85f6-5717-4562-b3fc-2c963f66afa6",
                     size: "S",
-                    stock: 10,
                     color: "black",
                     image_url:
                         "https://image.hm.com/assets/hm/d2/b6/d2b600f3bcfc2f061a1e7ec6353fa0e0bcd2f092.jpg?imwidth=564",
@@ -595,7 +551,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "14fa85f6-5717-4562-b3fc-2c963f66afa6",
                     size: "S",
-                    stock: 10,
                     color: "gray",
                     image_url:
                         "https://static.zara.net/assets/public/729d/6011/61a34ddbb5d2/1e7ab4e1555c/05942040070-e1/05942040070-e1.jpg?ts=1728403210159&w=563",
@@ -604,7 +559,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "14fa85f6-5717-4562-b3fc-2c963f66afa6",
                     size: "S",
-                    stock: 10,
                     color: "gray",
                     image_url:
                         "https://static.zara.net/assets/public/729d/6011/61a34ddbb5d2/1e7ab4e1555c/05942040070-e1/05942040070-e1.jpg?ts=1728403210159&w=563",
@@ -624,7 +578,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "15fa85f6-5717-4562-b3fc-2c963f66afa6",
                     size: "S",
-                    stock: 10,
                     color: "blue",
                     image_url:
                         "https://image.hm.com/assets/hm/12/b0/12b00a34ac1069c6845cd359cfe5313a4d82f896.jpg?imwidth=564",
@@ -633,7 +586,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "15fa85f6-5717-4562-b3fc-2c963f66afa6",
                     size: "S",
-                    stock: 10,
                     color: "blue",
                     image_url:
                         "https://image.hm.com/assets/hm/12/b0/12b00a34ac1069c6845cd359cfe5313a4d82f896.jpg?imwidth=564",
@@ -653,7 +605,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "16fa85f6-5717-4562-b3fc-2c963f66afa6",
                     size: "S",
-                    stock: 10,
                     color: "blue",
                     image_url:
                         "https://static.zara.net/assets/public/4ac5/b77a/538f4445a089/6cd01807c477/06544549800-e1/06544549800-e1.jpg?ts=1727077629594&w=563",
@@ -662,7 +613,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "16fa85f6-5717-4562-b3fc-2c963f66afa6",
                     size: "S",
-                    stock: 10,
                     color: "blue",
                     image_url:
                         "https://static.zara.net/assets/public/4ac5/b77a/538f4445a089/6cd01807c477/06544549800-e1/06544549800-e1.jpg?ts=1727077629594&w=563",
@@ -682,7 +632,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "17fa85f6-5717-4562-b3fc-2c963f66afa6",
                     size: "S",
-                    stock: 10,
                     color: "black",
                     image_url:
                         "https://image.hm.com/assets/hm/36/35/3635057383ed6a8a839c6c1ad5241a73e6bc06e2.jpg?imwidth=564",
@@ -691,7 +640,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "17fa85f6-5717-4562-b3fc-2c963f66afa6",
                     size: "S",
-                    stock: 10,
                     color: "black",
                     image_url:
                         "https://image.hm.com/assets/hm/36/35/3635057383ed6a8a839c6c1ad5241a73e6bc06e2.jpg?imwidth=564",
@@ -711,7 +659,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "19fa85f6-5717-4562-b3fc-2c963f66afa6",
                     size: "S",
-                    stock: 10,
                     color: "white",
                     image_url:
                         "https://image.hm.com/assets/hm/0d/23/0d23f47306c8f0c33311531d714de1c2f713288d.jpg?imwidth=564",
@@ -720,7 +667,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "19fa85f6-5717-4562-b3fc-2c963f66afa6",
                     size: "S",
-                    stock: 10,
                     color: "white",
                     image_url:
                         "https://image.hm.com/assets/hm/0d/23/0d23f47306c8f0c33311531d714de1c2f713288d.jpg?imwidth=564",
@@ -743,7 +689,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "1fa85321-5717-4562-b3fc-2c963f66afa6",
                     size: "Uni",
-                    stock: 10,
                     color: "black",
                     image_url:
                         "https://static.zara.net/assets/public/cbed/d5b1/c47047a88df1/2588fcb95365/02823401800-e1/02823401800-e1.jpg?ts=1724255383732&w=563",
@@ -752,7 +697,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "1fa85321-5717-4562-b3fc-2c963f66afa6",
                     size: "Uni",
-                    stock: 10,
                     color: "black",
                     image_url:
                         "https://static.zara.net/assets/public/cbed/d5b1/c47047a88df1/2588fcb95365/02823401800-e1/02823401800-e1.jpg?ts=1724255383732&w=563",
@@ -772,7 +716,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "2fa85321-5717-4562-b3fc-2c963f66afa6",
                     size: "Uni",
-                    stock: 10,
                     color: "black",
                     image_url:
                         "https://static.zara.net/assets/public/2b5c/2f1a/ec2941b195a4/4b18e8d60974/02823305700-e1/02823305700-e1.jpg?ts=1724662454332&w=563",
@@ -781,7 +724,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "2fa85321-5717-4562-b3fc-2c963f66afa6",
                     size: "Uni",
-                    stock: 10,
                     color: "black",
                     image_url:
                         "https://static.zara.net/assets/public/2b5c/2f1a/ec2941b195a4/4b18e8d60974/02823305700-e1/02823305700-e1.jpg?ts=1724662454332&w=563",
@@ -801,7 +743,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "3fa85321-5717-4562-b3fc-2c963f66afa6",
                     size: "Uni",
-                    stock: 10,
                     color: "black",
                     image_url:
                         "https://static.zara.net/assets/public/446c/4d91/f7f24047aaf4/23e0eff5a30e/02823315802-e1/02823315802-e1.jpg?ts=1729582375664&w=563",
@@ -810,7 +751,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "3fa85321-5717-4562-b3fc-2c963f66afa6",
                     size: "Uni",
-                    stock: 10,
                     color: "black",
                     image_url:
                         "https://static.zara.net/assets/public/446c/4d91/f7f24047aaf4/23e0eff5a30e/02823315802-e1/02823315802-e1.jpg?ts=1729582375664&w=563",
@@ -830,7 +770,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "4fa85321-5717-4562-b3fc-2c963f66afa6",
                     size: "Uni",
-                    stock: 10,
                     color: "black",
                     image_url:
                         "https://static.zara.net/assets/public/b2e6/815d/43974b2c8d50/ab8bf0c93fe7/13800420800-e1/13800420800-e1.jpg?ts=1726997784108&w=563",
@@ -853,7 +792,6 @@ Deno.serve(async (req) => {
                 {
                     product_id: "1fa85f64-5717-4562-b3fc-2c963f6643ad",
                     size: "36",
-                    stock: 10,
                     color: "black",
                     image_url:
                         "https://www.timetrend.pl/media/catalog/product/cache/6eae3d2d6a1f26f7e69160576124b30a/a/t/atlantic_52857.41.53.webp",
@@ -867,28 +805,26 @@ Deno.serve(async (req) => {
         { //https://eobuwie.com.pl/p/buty-hoka-bondi-8-1123202-bblc?is_retargeting=true&pid=google&af_sub1=cpc&c=_PL_EOB_PLA_MAIN_Google&af_click_lookback=3h&af_reengagement_window=1d
             id: "8fa58394-5717-4562-8491-2c963f66afa6",
             price: 180,
-            name: "Hoka One One Bondi",
-            brand: "Hoka",
+            name: "Adilette Aqua",
+            brand: "Adidas",
             image_url:
-                "https://img.eobuwie.cloud/eob_product_660w_880h(f/e/1/6/fe16cf8900ae7401b03c39465058b2afc9bb8fe0_22_0195719627652_rz.jpg,webp)/buty-hoka-bondi-8-1123202-bblc.webp",
+                "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/cb1316406e584892bdb3a991001bd46d_9366/Klapki_adilette_Aqua_Czern_F35543_01_standard.jpg",
             category: "sport",
             product_variants: [
                 {
                     product_id: "8fa58394-5717-4562-8491-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black",
                     image_url:
-                        "https://img.eobuwie.cloud/eob_product_660w_880h(f/e/1/6/fe16cf8900ae7401b03c39465058b2afc9bb8fe0_22_0195719627652_rz.jpg,webp)/buty-hoka-bondi-8-1123202-bblc.webp",
+                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/cb1316406e584892bdb3a991001bd46d_9366/Klapki_adilette_Aqua_Czern_F35543_01_standard.jpg",
                     sex: "men",
                 },
                 {
                     product_id: "8fa58394-5717-4562-8491-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black",
                     image_url:
-                        "https://img.eobuwie.cloud/eob_product_660w_880h(f/e/1/6/fe16cf8900ae7401b03c39465058b2afc9bb8fe0_22_0195719627652_rz.jpg,webp)/buty-hoka-bondi-8-1123202-bblc.webp",
+                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/cb1316406e584892bdb3a991001bd46d_9366/Klapki_adilette_Aqua_Czern_F35543_01_standard.jpg",
                     sex: "women",
                 },
             ],
@@ -896,64 +832,58 @@ Deno.serve(async (req) => {
         { //https://eobuwie.com.pl/c/eobuwie/kolekcja:vans_slip_on?cookie_consent=true
             id: "3fa49664-5717-4562-8491-2c963f66afa6",
             price: 90,
-            name: "Classic Slip-On",
-            brand: "Vans",
+            name: "Dunk Low",
+            brand: "Nike",
             image_url:
-                "https://img.eobuwie.cloud/eob_product_660w_880h(7/4/8/4/748463f40776830b04677081ef5d25977154f872_03_0888654802870_rz.jpg,webp)/tenisowki-vans-uy-classic-slip-on-vn000zbueo01-checkerboard-blk-pewter-0000303217167.webp",
+                "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c536e339-cc8b-42cb-96d9-a92a71b5d91c/W+NIKE+DUNK+LOW+NEXT+NATURE.png",
             category: "sport",
             product_variants: [
                 {
                     product_id: "3fa49664-5717-4562-8491-2c963f66afa6",
                     size: "36",
-                    stock: 10,
-                    color: "checkerboard",
+                    color: "black-white",
                     image_url:
-                        "https://img.eobuwie.cloud/eob_product_660w_880h(7/4/8/4/748463f40776830b04677081ef5d25977154f872_03_0888654802870_rz.jpg,webp)/tenisowki-vans-uy-classic-slip-on-vn000zbueo01-checkerboard-blk-pewter-000030321716",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c536e339-cc8b-42cb-96d9-a92a71b5d91c/W+NIKE+DUNK+LOW+NEXT+NATURE.png",
                     sex: "men",
                 },
                 {
                     product_id: "3fa49664-5717-4562-8491-2c963f66afa6",
                     size: "36",
-                    stock: 10,
-                    color: "checkerboard",
+                    color: "black-white",
                     image_url:
-                        "https://img.eobuwie.cloud/eob_product_660w_880h(7/4/8/4/748463f40776830b04677081ef5d25977154f872_03_0888654802870_rz.jpg,webp)/tenisowki-vans-uy-classic-slip-on-vn000zbueo01-checkerboard-blk-pewter-000030321716",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c536e339-cc8b-42cb-96d9-a92a71b5d91c/W+NIKE+DUNK+LOW+NEXT+NATURE.png",
                     sex: "women",
                 },
                 {
                     product_id: "3fa49664-5717-4562-8491-2c963f66afa6",
                     size: "36",
-                    stock: 10,
-                    color: "checkerboard",
+                    color: "black-white",
                     image_url:
-                        "https://img.eobuwie.cloud/eob_product_660w_880h(7/4/8/4/748463f40776830b04677081ef5d25977154f872_03_0888654802870_rz.jpg,webp)/tenisowki-vans-uy-classic-slip-on-vn000zbueo01-checkerboard-blk-pewter-000030321716",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c536e339-cc8b-42cb-96d9-a92a71b5d91c/W+NIKE+DUNK+LOW+NEXT+NATURE.png",
                     sex: "kids",
                 },
                 {
                     product_id: "3fa49664-5717-4562-8491-2c963f66afa6",
                     size: "36",
-                    stock: 10,
-                    color: "gray",
+                    color: "white",
                     image_url:
-                        "https://img.eobuwie.cloud/eob_product_528w_704h(9/8/9/1/98915e04d78c67157f63deb644692ab68fbe3753_03_0196573419926_ki.jpg,webp)/tenisowki-vans-uy-classic-slip-on-vn0005wwsxn1-silver-navy-0000303198329.webp",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/67a7d317-2cbc-44bf-8383-52cd908648ef/W+NIKE+DUNK+LOW.png",
                     sex: "kids",
                 },
                 {
                     product_id: "3fa49664-5717-4562-8491-2c963f66afa6",
                     size: "36",
-                    stock: 10,
-                    color: "gray",
+                    color: "white",
                     image_url:
-                        "https://img.eobuwie.cloud/eob_product_528w_704h(9/8/9/1/98915e04d78c67157f63deb644692ab68fbe3753_03_0196573419926_ki.jpg,webp)/tenisowki-vans-uy-classic-slip-on-vn0005wwsxn1-silver-navy-0000303198329.webp",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/67a7d317-2cbc-44bf-8383-52cd908648ef/W+NIKE+DUNK+LOW.png",
                     sex: "men",
                 },
                 {
                     product_id: "3fa49664-5717-4562-8491-2c963f66afa6",
                     size: "36",
-                    stock: 10,
-                    color: "gray",
+                    color: "white",
                     image_url:
-                        "https://img.eobuwie.cloud/eob_product_528w_704h(9/8/9/1/98915e04d78c67157f63deb644692ab68fbe3753_03_0196573419926_ki.jpg,webp)/tenisowki-vans-uy-classic-slip-on-vn0005wwsxn1-silver-navy-0000303198329.webp",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/67a7d317-2cbc-44bf-8383-52cd908648ef/W+NIKE+DUNK+LOW.png",
                     sex: "women",
                 },
             ],
@@ -961,94 +891,85 @@ Deno.serve(async (req) => {
     ];
 
     const news: Product[] = [
-        { // https://www.nike.com/pl/t/buty-meskie-air-max-270-Kqzbp7/AH8050-002
+        {
             id: "1fa85f64-5717-9502-b3fc-2c963f66afa6",
             price: 120,
-            name: "Air Max 270",
-            brand: "Nike",
+            name: "OZWEEGO",
+            brand: "Adidas",
             image_url:
-                "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/skwgyqrbfzhu6uyeh0gg/AIR+MAX+270.png",
+                "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/26957f977ecf4119879caa7600ff0f1b_9366/OZWEEGO_Shoes_Bialy_EE6464_01_standard.jpg",
             category: "new",
             product_variants: [
                 {
                     product_id: "1fa85f64-5717-9502-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black-white",
                     image_url:
-                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/skwgyqrbfzhu6uyeh0gg/AIR+MAX+270.png",
+                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/26957f977ecf4119879caa7600ff0f1b_9366/OZWEEGO_Shoes_Bialy_EE6464_01_standard.jpg",
                     sex: "men",
                 },
                 {
                     product_id: "1fa85f64-5717-9502-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black-white",
                     image_url:
-                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/skwgyqrbfzhu6uyeh0gg/AIR+MAX+270.png",
+                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/26957f977ecf4119879caa7600ff0f1b_9366/OZWEEGO_Shoes_Bialy_EE6464_01_standard.jpg",
                     sex: "women",
                 },
                 {
                     product_id: "1fa85f64-5717-9502-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black-white",
                     image_url:
-                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/skwgyqrbfzhu6uyeh0gg/AIR+MAX+270.png",
+                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/26957f977ecf4119879caa7600ff0f1b_9366/OZWEEGO_Shoes_Bialy_EE6464_01_standard.jpg",
                     sex: "kids",
                 },
                 {
                     product_id: "1fa85f64-5717-9502-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "white",
                     image_url:
-                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/awjogtdnqxniqqk0wpgf/AIR+MAX+270.png",
+                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fdd2ed4315b74f6ea506acb600b20504_9366/OZWEEGO_Shoes_Bezowy_FX6029_01_standard.jpg",
                     sex: "men",
                 },
                 {
                     product_id: "1fa85f64-5717-9502-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "white",
                     image_url:
-                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/awjogtdnqxniqqk0wpgf/AIR+MAX+270.png",
+                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fdd2ed4315b74f6ea506acb600b20504_9366/OZWEEGO_Shoes_Bezowy_FX6029_01_standard.jpg",
                     sex: "women",
                 },
                 {
                     product_id: "1fa85f64-5717-9502-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "white",
                     image_url:
-                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/awjogtdnqxniqqk0wpgf/AIR+MAX+270.png",
+                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fdd2ed4315b74f6ea506acb600b20504_9366/OZWEEGO_Shoes_Bezowy_FX6029_01_standard.jpg",
                     sex: "kids",
                 },
                 {
                     product_id: "1fa85f64-5717-9502-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black",
                     image_url:
-                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/dl2krirthxihbhgtkdv5/AIR+MAX+270.png",
+                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/86dbbccdb3db4f5f846eaa7600ee8b42_9366/OZWEEGO_Shoes_Czern_EE6999_01_00_standard.jpg",
                     sex: "men",
                 },
                 {
                     product_id: "1fa85f64-5717-9502-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black",
                     image_url:
-                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/dl2krirthxihbhgtkdv5/AIR+MAX+270.png",
+                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/86dbbccdb3db4f5f846eaa7600ee8b42_9366/OZWEEGO_Shoes_Czern_EE6999_01_00_standard.jpg",
                     sex: "women",
                 },
                 {
                     product_id: "1fa85f64-5717-9502-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black",
                     image_url:
-                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/dl2krirthxihbhgtkdv5/AIR+MAX+270.png",
+                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/86dbbccdb3db4f5f846eaa7600ee8b42_9366/OZWEEGO_Shoes_Czern_EE6999_01_00_standard.jpg",
                     sex: "kids",
                 },
             ],
@@ -1056,130 +977,59 @@ Deno.serve(async (req) => {
         { //https://www.adidas.pl/ultraboost-1.0-shoes/HQ4201.html
             id: "2fa85f64-5717-9502-b3fc-2c963f66afa6",
             price: 150,
-            name: "Ultra Boost",
-            brand: "Adidas",
+            name: "Air Max 97",
+            brand: "Nike",
             image_url:
-                "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bad84b99019d4386a67cd03ecc51c0a4_9366/Ultraboost_1.0_Shoes_Czern_HQ4201_HM1.jpg",
+                "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9d8aae5c-a45b-4327-a7da-f847443a5321/NIKE+AIR+MAX+97.png",
             category: "new",
             product_variants: [
                 {
                     product_id: "2fa85f64-5717-9502-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black-white",
                     image_url:
-                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bad84b99019d4386a67cd03ecc51c0a4_9366/Ultraboost_1.0_Shoes_Czern_HQ4201_H",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/kcfjke64a50qadfdn2im/NIKE+AIR+MAX+97.png",
                     sex: "men",
                 },
                 {
                     product_id: "2fa85f64-5717-9502-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black-white",
                     image_url:
-                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bad84b99019d4386a67cd03ecc51c0a4_9366/Ultraboost_1.0_Shoes_Czern_HQ4201_H",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/kcfjke64a50qadfdn2im/NIKE+AIR+MAX+97.png",
                     sex: "women",
                 },
                 {
                     product_id: "2fa85f64-5717-9502-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
                     color: "black-white",
                     image_url:
-                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bad84b99019d4386a67cd03ecc51c0a4_9366/Ultraboost_1.0_Shoes_Czern_HQ4201_H",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/kcfjke64a50qadfdn2im/NIKE+AIR+MAX+97.png",
                     sex: "kids",
                 },
                 {
                     product_id: "2fa85f64-5717-9502-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
-                    color: "white-green",
+                    color: "white",
                     image_url:
-                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/4dea41850536484faa1a24fd10b30ddc_9366/Ultraboost_1.0_Shoes_Bialy_JH6600_01_standard.jpg",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9d8aae5c-a45b-4327-a7da-f847443a5321/NIKE+AIR+MAX+97.png",
                     sex: "men",
                 },
                 {
                     product_id: "2fa85f64-5717-9502-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
-                    color: "white-green",
+                    color: "white",
                     image_url:
-                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/4dea41850536484faa1a24fd10b30ddc_9366/Ultraboost_1.0_Shoes_Bialy_JH6600_01_standard.jpg",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9d8aae5c-a45b-4327-a7da-f847443a5321/NIKE+AIR+MAX+97.png",
                     sex: "women",
                 },
                 {
                     product_id: "2fa85f64-5717-9502-b3fc-2c963f66afa6",
                     size: "36",
-                    stock: 10,
-                    color: "white-green",
+                    color: "white",
                     image_url:
-                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/4dea41850536484faa1a24fd10b30ddc_9366/Ultraboost_1.0_Shoes_Bialy_JH6600_01_standard.jpg",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9d8aae5c-a45b-4327-a7da-f847443a5321/NIKE+AIR+MAX+97.png",
                     sex: "kids",
-                },
-            ],
-        },
-        { //https://eobuwie.com.pl/c/eobuwie/kolekcja:vans_slip_on?cookie_consent=true
-            id: "3fa85f64-5717-9502-b3fc-2c963f66afa6",
-            price: 90,
-            name: "Classic Slip-On",
-            brand: "Vans",
-            image_url:
-                "https://img.eobuwie.cloud/eob_product_660w_880h(7/4/8/4/748463f40776830b04677081ef5d25977154f872_03_0888654802870_rz.jpg,webp)/tenisowki-vans-uy-classic-slip-on-vn000zbueo01-checkerboard-blk-pewter-0000303217167.webp",
-            category: "new",
-            product_variants: [
-                {
-                    product_id: "3fa85f64-5717-9502-b3fc-2c963f66afa6",
-                    size: "36",
-                    stock: 10,
-                    color: "checkerboard",
-                    image_url:
-                        "https://img.eobuwie.cloud/eob_product_660w_880h(7/4/8/4/748463f40776830b04677081ef5d25977154f872_03_0888654802870_rz.jpg,webp)/tenisowki-vans-uy-classic-slip-on-vn000zbueo01-checkerboard-blk-pewter-000030321716",
-                    sex: "men",
-                },
-                {
-                    product_id: "3fa85f64-5717-9502-b3fc-2c963f66afa6",
-                    size: "36",
-                    stock: 10,
-                    color: "checkerboard",
-                    image_url:
-                        "https://img.eobuwie.cloud/eob_product_660w_880h(7/4/8/4/748463f40776830b04677081ef5d25977154f872_03_0888654802870_rz.jpg,webp)/tenisowki-vans-uy-classic-slip-on-vn000zbueo01-checkerboard-blk-pewter-000030321716",
-                    sex: "women",
-                },
-                {
-                    product_id: "3fa85f64-5717-9502-b3fc-2c963f66afa6",
-                    size: "36",
-                    stock: 10,
-                    color: "checkerboard",
-                    image_url:
-                        "https://img.eobuwie.cloud/eob_product_660w_880h(7/4/8/4/748463f40776830b04677081ef5d25977154f872_03_0888654802870_rz.jpg,webp)/tenisowki-vans-uy-classic-slip-on-vn000zbueo01-checkerboard-blk-pewter-000030321716",
-                    sex: "kids",
-                },
-                {
-                    product_id: "3fa85f64-5717-9502-b3fc-2c963f66afa6",
-                    size: "36",
-                    stock: 10,
-                    color: "gray",
-                    image_url:
-                        "https://img.eobuwie.cloud/eob_product_528w_704h(9/8/9/1/98915e04d78c67157f63deb644692ab68fbe3753_03_0196573419926_ki.jpg,webp)/tenisowki-vans-uy-classic-slip-on-vn0005wwsxn1-silver-navy-0000303198329.webp",
-                    sex: "kids",
-                },
-                {
-                    product_id: "3fa85f64-5717-9502-b3fc-2c963f66afa6",
-                    size: "36",
-                    stock: 10,
-                    color: "gray",
-                    image_url:
-                        "https://img.eobuwie.cloud/eob_product_528w_704h(9/8/9/1/98915e04d78c67157f63deb644692ab68fbe3753_03_0196573419926_ki.jpg,webp)/tenisowki-vans-uy-classic-slip-on-vn0005wwsxn1-silver-navy-0000303198329.webp",
-                    sex: "men",
-                },
-                {
-                    product_id: "3fa85f64-5717-9502-b3fc-2c963f66afa6",
-                    size: "36",
-                    stock: 10,
-                    color: "gray",
-                    image_url:
-                        "https://img.eobuwie.cloud/eob_product_528w_704h(9/8/9/1/98915e04d78c67157f63deb644692ab68fbe3753_03_0196573419926_ki.jpg,webp)/tenisowki-vans-uy-classic-slip-on-vn0005wwsxn1-silver-navy-0000303198329.webp",
-                    sex: "women",
                 },
             ],
         },
@@ -1191,139 +1041,135 @@ Deno.serve(async (req) => {
     );
 
     for (const shoe of shoes) {
-      await supabase
-        .from("products")
-        .insert({
-          id: shoe.id,
-          price: shoe.price,
-          name: shoe.name,
-          brand: shoe.brand,
-          image_url: shoe.image_url,
-          category: shoe.category,
-        });
+        await supabase
+            .from("products")
+            .insert({
+                id: shoe.id,
+                price: shoe.price,
+                name: shoe.name,
+                brand: shoe.brand,
+                image_url: shoe.image_url,
+                category: shoe.category,
+            });
 
-      for (const variant of shoe.product_variants) {
-        let sizes: string[] = [];
-        if (variant.sex === "men") {
-          sizes = ["40", "41", "42", "43", "44", "45"];
-        } else if (variant.sex === "women") {
-          sizes = ["36", "37", "38", "39", "40", "41"];
-        } else if (variant.sex === "kids") {
-          sizes = ["30", "31", "33", "33", "34", "35"];
-        }
+        for (const variant of shoe.product_variants) {
+            let sizes: string[] = [];
+            if (variant.sex === "men") {
+                sizes = ["40", "41", "42", "43", "44", "45"];
+            } else if (variant.sex === "women") {
+                sizes = ["36", "37", "38", "39", "40", "41"];
+            } else if (variant.sex === "kids") {
+                sizes = ["30", "31", "33", "33", "34", "35"];
+            }
 
-        try {
-          for (const size of sizes) {
-            await supabase
-              .from("products_variants")
-              .insert({
-                product_id: shoe.id,
-                size,
-                stock: variant.stock,
-                color: variant.color,
-                image_url: variant.image_url,
-                sex: variant.sex,
-              });
-          }
-        } catch (error) {
-          console.error(error);
+            try {
+                for (const size of sizes) {
+                    await supabase
+                        .from("products_variants")
+                        .insert({
+                            product_id: shoe.id,
+                            size,
+                            color: variant.color,
+                            image_url: variant.image_url,
+                            sex: variant.sex,
+                        });
+                }
+            } catch (error) {
+                console.error(error);
+            }
         }
-      }
     }
 
-    // for (const cloth of clothes) {
-    //   await supabase
-    //     .from("products")
-    //     .insert({
-    //       id: cloth.id,
-    //       price: cloth.price,
-    //       name: cloth.name,
-    //       brand: cloth.brand,
-    //       image_url: cloth.image_url,
-    //       category: cloth.category,
-    //     });
+    for (const cloth of clothes) {
+        await supabase
+            .from("products")
+            .insert({
+                id: cloth.id,
+                price: cloth.price,
+                name: cloth.name,
+                brand: cloth.brand,
+                image_url: cloth.image_url,
+                category: cloth.category,
+            });
 
-    //   for (const variant of cloth.product_variants) {
-    //     const sizes: string[] = ['S', 'M', 'L', 'XL', 'XXL'];
+        for (const variant of cloth.product_variants) {
+            const sizes: string[] = ["S", "M", "L", "XL", "XXL"];
 
-    //     try {
-    //       for (const size of sizes) {
-    //         await supabase
-    //           .from("products_variants")
-    //           .insert({
-    //             product_id: cloth.id,
-    //             size,
-    //             stock: variant.stock,
-    //             color: variant.color,
-    //             image_url: variant.image_url,
-    //             sex: variant.sex,
-    //           });
-    //       }
-    //     } catch (error) {
-    //       console.error(error);
-    //     }
-    //   }
-    // }
+            try {
+                for (const size of sizes) {
+                    await supabase
+                        .from("products_variants")
+                        .insert({
+                            product_id: cloth.id,
+                            size,
+                            color: variant.color,
+                            image_url: variant.image_url,
+                            sex: variant.sex,
+                        });
+                }
+            } catch (error) {
+                console.error(error);
+            }
+        }
+    }
 
-    // for (const accessory of accessories) {
-    //   await supabase
-    //     .from("products")
-    //     .insert({
-    //       id: accessory.id,
-    //       price: accessory.price,
-    //       name: accessory.name,
-    //       brand: accessory.brand,
-    //       image_url: accessory.image_url,
-    //       category: accessory.category,
-    //     });
+    for (const accessory of accessories) {
+        await supabase
+            .from("products")
+            .insert({
+                id: accessory.id,
+                price: accessory.price,
+                name: accessory.name,
+                brand: accessory.brand,
+                image_url: accessory.image_url,
+                category: accessory.category,
+            });
 
-    //   for (const variant of accessory.product_variants) {
-    //     try {
-    //       await supabase
-    //           .from("products_variants")
-    //           .insert({
-    //             product_id: accessory.id,
-    //             size: variant.size,
-    //             stock: variant.stock,
-    //             color: variant.color,
-    //             image_url: variant.image_url,
-    //             sex: variant.sex,
-    //           });
-    //     } catch (error) {
-    //       console.error(error);
-    //     }
-    //   }
-    // }
+        for (const variant of accessory.product_variants) {
+            try {
+                await supabase
+                    .from("products_variants")
+                    .insert({
+                        product_id: accessory.id,
+                        size: variant.size,
+                        color: variant.color,
+                        image_url: variant.image_url,
+                        sex: variant.sex,
+                    });
+            } catch (error) {
+                console.error(error);
+            }
+        }
+    }
 
-    // for (const luxur of luxury) {
-    //   await supabase
-    //     .from("products")
-    //     .insert({
-    //       id: luxur.id,
-    //       price: luxur.price,
-    //       name: luxur.name,
-    //       brand: luxur.brand,
-    //       image_url: luxur.image_url,
-    //       category: luxur.category,
-    //     });
+    for (const luxur of luxury) {
+        await supabase
+            .from("products")
+            .insert({
+                id: luxur.id,
+                price: luxur.price,
+                name: luxur.name,
+                brand: luxur.brand,
+                image_url: luxur.image_url,
+                category: luxur.category,
+            });
 
-    //   for (const variant of luxur.product_variants) {
-    //     try {
-    //       await supabase
-    //           .from("products_variants")
-    //           .insert({
-    //             product_id: luxur.id,
-    //             size: variant.size,
-    //             stock: variant.stock,
-    //             color: variant.color,
-    //             image_url: variant.image_url,
-    //             sex: variant.sex,
-    //           });
-    //     } catch (error) {
-    //       console.error(error);
-    //     }
-    //   }
-    // }
+        for (const variant of luxur.product_variants) {
+            try {
+                await supabase
+                    .from("products_variants")
+                    .insert({
+                        product_id: luxur.id,
+                        size: variant.size,
+                        color: variant.color,
+                        image_url: variant.image_url,
+                        sex: variant.sex,
+                    });
+            } catch (error) {
+                console.error(error);
+            }
+        }
+    }
 
     for (const spor of sport) {
         await supabase
@@ -1344,7 +1190,6 @@ Deno.serve(async (req) => {
                     .insert({
                         product_id: spor.id,
                         size: variant.size,
-                        stock: variant.stock,
                         color: variant.color,
                         image_url: variant.image_url,
                         sex: variant.sex,
@@ -1355,46 +1200,45 @@ Deno.serve(async (req) => {
         }
     }
 
-    // for (const nev of news) {
-    //   await supabase
-    //     .from("products")
-    //     .insert({
-    //       id: nev.id,
-    //       price: nev.price,
-    //       name: nev.name,
-    //       brand: nev.brand,
-    //       image_url: nev.image_url,
-    //       category: nev.category,
-    //     });
+    for (const nev of news) {
+        await supabase
+            .from("products")
+            .insert({
+                id: nev.id,
+                price: nev.price,
+                name: nev.name,
+                brand: nev.brand,
+                image_url: nev.image_url,
+                category: nev.category,
+            });
 
-    //   for (const variant of nev.product_variants) {
-    //     let sizes: string[] = [];
-    //     if (variant.sex === "men") {
-    //       sizes = ["40", "41", "42", "43", "44", "45"];
-    //     } else if (variant.sex === "women") {
-    //       sizes = ["36", "37", "38", "39", "40", "41"];
-    //     } else if (variant.sex === "kids") {
-    //       sizes = ["30", "31", "33", "33", "34", "35"];
-    //     }
+        for (const variant of nev.product_variants) {
+            let sizes: string[] = [];
+            if (variant.sex === "men") {
+                sizes = ["40", "41", "42", "43", "44", "45"];
+            } else if (variant.sex === "women") {
+                sizes = ["36", "37", "38", "39", "40", "41"];
+            } else if (variant.sex === "kids") {
+                sizes = ["30", "31", "33", "33", "34", "35"];
+            }
 
-    //     try {
-    //       for (const size of sizes) {
-    //         await supabase
-    //           .from("products_variants")
-    //           .insert({
-    //             product_id: nev.id,
-    //             size,
-    //             stock: variant.stock,
-    //             color: variant.color,
-    //             image_url: variant.image_url,
-    //             sex: variant.sex,
-    //           });
-    //       }
-    //     } catch (error) {
-    //       console.error(error);
-    //     }
-    //   }
-    // }
+            try {
+                for (const size of sizes) {
+                    await supabase
+                        .from("products_variants")
+                        .insert({
+                            product_id: nev.id,
+                            size,
+                            color: variant.color,
+                            image_url: variant.image_url,
+                            sex: variant.sex,
+                        });
+                }
+            } catch (error) {
+                console.error(error);
+            }
+        }
+    }
 
     return new Response(
         // JSON.stringify(data),

@@ -65,7 +65,7 @@ Deno.serve(async (req) => {
             id: basket.variant_id,
             color: (basket.products_variants as any).color,
             size: (basket.products_variants as any).size,
-            image_url: (basket.products_variants as any).image,
+            image_url: (basket.products_variants as any).image_url,
             sex: (basket.products_variants as any).sex,
         },
         quantity: basket.quantity,
