@@ -11,7 +11,7 @@ interface VariantDetails {
         isInCart: boolean;
     }[];
     imageUrl: string;
-    isFavourite: boolean;
+    isFavorite: boolean;
 }
 
 Deno.serve(async (req) => {
@@ -82,7 +82,7 @@ Deno.serve(async (req) => {
         const variantDetails = variantsDetails.find(
             (productDetails) => productDetails.color === variant.color,
         );
-        const isFavourite = favouritesData.some(
+        const isFavorite = favouritesData.some(
             (favourite) => favourite.variant_id === variant.id,
         );
         const isInCart = cartData.some((cart) =>
@@ -95,8 +95,8 @@ Deno.serve(async (req) => {
                 variantId: variant.id,
                 isInCart,
             });
-            if (isFavourite) {
-                variantDetails.isFavourite = true;
+            if (isFavorite) {
+                variantDetails.isFavorite = true;
             }
         } else {
             variantsDetails.push({
@@ -108,7 +108,7 @@ Deno.serve(async (req) => {
                     isInCart,
                 }],
                 imageUrl: variant.image_url,
-                isFavourite,
+                isFavorite,
             });
         }
     }
