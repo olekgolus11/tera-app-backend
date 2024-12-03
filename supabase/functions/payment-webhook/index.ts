@@ -43,6 +43,22 @@ Deno.serve(async (req) => {
                     },
                 );
             }
+
+            const { error: deleteCartError } = await supabaseService.supabase
+                .from("baskets")
+                .delete()
+                .eq("user_id", paymentIntentData.metadata.user_id);
+
+            if (deleteCartError) {
+                return new Response(
+                    JSON.stringify(deleteCartError),
+                    {
+                        status: 403,
+                        headers: { "Content-Type": "application/json" },
+                    },
+                );
+            }
+
             break;
         }
         default:
