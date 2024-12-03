@@ -28,7 +28,7 @@ Deno.serve(async (req) => {
             }
 
             const { error: transactionsError } = await supabaseService.supabase
-                .from("transactions").insert({
+                .from("orders").insert({
                     user_id: paymentIntentData.metadata.user_id,
                     amount: paymentIntentData.amount / 100,
                     cart: cartData,
