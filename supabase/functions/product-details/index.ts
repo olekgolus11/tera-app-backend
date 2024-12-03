@@ -42,8 +42,6 @@ Deno.serve(async (req) => {
         .eq("product_id", productId)
         .eq("sex", sex);
 
-    console.log(data);
-
     if (error) {
         return new Response(
             JSON.stringify(error),
