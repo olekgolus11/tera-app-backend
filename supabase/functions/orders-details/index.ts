@@ -1,32 +1,101 @@
-// Follow this setup guide to integrate the Deno language server with your editor:
-// https://deno.land/manual/getting_started/setup_your_environment
-// This enables autocomplete, go to definition, etc.
+import "jsr:@supabase/functions-js/edge-runtime.d.ts";
+import { SupabaseService } from "../_shared/SupabaseService.ts";
+import { getBearerToken } from "../_shared/functions.ts";
 
-// Setup type definitions for built-in Supabase Runtime APIs
-import "jsr:@supabase/functions-js/edge-runtime.d.ts"
-
-console.log("Hello from Functions!")
+interface ProductOrder {
+    product: {
+        id: string;
+        name: string;
+        brand: string;
+        price: number;
+        discount: number;
+    };
+    variant: {
+        id: string;
+        size: string;
+        image_url: string;
+    };
+    quantity: number;
+}
 
 Deno.serve(async (req) => {
-  const { name } = await req.json()
-  const data = {
-    message: `Hello ${name}!`,
-  }
+    const { orderId } = await req.json();
 
-  return new Response(
-    JSON.stringify(data),
-    { headers: { "Content-Type": "application/json" } },
-  )
-})
+    let supabaseService;
+    let userId;
 
-/* To invoke locally:
+    if (Deno.env.get("IS_DEV")) {
+        supabaseService = new SupabaseService();
+        userId = "e252c237-5d01-4b50-b7df-c1b8d5c7586b";
+    } else {
+        const token = getBearerToken(req);
+        supabaseService = new SupabaseService(token);
+        userId = (await supabaseService.getUser(token)).data.user?.id;
+    }
 
-  1. Run `supabase start` (see: https://supabase.com/docs/reference/cli/supabase-start)
-  2. Make an HTTP request:
+    const supabase = supabaseService.supabase;
+    const { data: orderData, error: orderError } = await supabase
+        .from("orders")
+        .select(`
+            id,
+            user_id,
+            amount,
+            cart,
+            created_at
+        `)
+        .eq("user_id", userId)
+        .eq("id", orderId)
+        .single();
 
-  curl -i --location --request POST 'http://127.0.0.1:54321/functions/v1/orders-details' \
-    --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0' \
-    --header 'Content-Type: application/json' \
-    --data '{"name":"Functions"}'
+    if (orderError) {
+        return new Response(
+            JSON.stringify(orderError),
+            { status: 403, headers: { "Content-Type": "application/json" } },
+        );
+    }
 
-*/
+    const productOrders: ProductOrder[] = [];
+    for (const item of orderData.cart) {
+        const { data: productData, error: productError } = await supabase
+            .from("products_variants")
+            .select(`
+                id,
+                image_url,
+                size,
+                products!inner(id, name, brand, price, discount)
+            `)
+            .eq("id", item.variant_id)
+            .single();
+
+        if (productError) {
+            return new Response(
+                JSON.stringify(productError),
+                {
+                    status: 403,
+                    headers: { "Content-Type": "application/json" },
+                },
+            );
+        }
+
+        productOrders.push({
+            product: {
+                id: (productData.products as any).id,
+                name: (productData.products as any).name,
+                brand: (productData.products as any).brand,
+                price: (productData.products as any).price,
+                discount: (productData.products as any).discount,
+            },
+            variant: {
+                id: productData.id,
+                size: productData.size,
+                image_url: productData.image_url,
+            },
+            quantity: item.quantity,
+        });
+    }
+
+    return new Response(
+        JSON.stringify(productOrders),
+        { headers: { "Content-Type": "application/json" } },
+    );
+});
