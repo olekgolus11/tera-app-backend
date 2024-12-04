@@ -43,13 +43,7 @@ Deno.serve(async (req) => {
                 .single();
 
         if (firstProductError) {
-            return new Response(
-                JSON.stringify(firstProductError),
-                {
-                    status: 403,
-                    headers: { "Content-Type": "application/json" },
-                },
-            );
+            throw firstProductError;
         }
         return {
             id: order.id,
@@ -58,6 +52,10 @@ Deno.serve(async (req) => {
             imageUrl: firstProductData.image_url,
         };
     }));
+
+    response.sort((a, b) => {
+        return new Date(b.date).getTime() - new Date(a.date).getTime();
+    });
 
     return new Response(
         JSON.stringify(response),

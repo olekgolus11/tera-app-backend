@@ -111,6 +111,17 @@ Deno.serve(async (req) => {
         }
     }
 
+    variantsDetails.forEach((variantDetails) => {
+        variantDetails.sizes.sort((a, b) => {
+            if (isNaN(parseInt(a.size)) && isNaN(parseInt(b.size))) {
+                const sizes = ["XS", "S", "M", "L", "XL", "XXL"];
+                return sizes.indexOf(a.size) - sizes.indexOf(b.size);
+            } else {
+                return parseInt(a.size) - parseInt(b.size);
+            }
+        });
+    });
+
     return new Response(
         JSON.stringify(variantsDetails),
         { headers: { "Content-Type": "application/json" } },

@@ -1,6 +1,6 @@
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
 import { SupabaseService } from "../_shared/SupabaseService.ts";
-import Stripe from "npm:stripe";
+import { Stripe } from "https://esm.sh/stripe@17.4.0";
 import { PaymentIntent } from "../_shared/types.ts";
 
 Deno.serve(async (req) => {
